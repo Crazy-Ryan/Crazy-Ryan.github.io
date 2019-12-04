@@ -16,7 +16,7 @@ body {
   padding: 10px;
 }
 
-.nasa-logo{
+.nasa-logo-top{
   position: absolute;
 }
 
@@ -175,6 +175,35 @@ body {
   background-image: url(/images/fermiicecube_as.jpg);
 }
 
+.box-heading 
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+
+.more-stories {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nasa-logo-bottom,
+.author{
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+.footer-option{
+  text-align: right;
+}
+
+.footer-option li{
+  display: inline;
+}
+
 .header .logo-link {
   padding: 10px;
 }
@@ -189,3 +218,4 @@ body {
   padding-top: 30%;
   border: orchid 1px solid;
 } */
+
