@@ -1,20 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+}
 body {
-    background-color: black;
-    width: 95%;
-    margin: auto;
+  background-color: black;
+  width: 95%;
+  margin: auto;
 }
 
 .header {
-    background: url('素材/starfield-banner.jpg ');
-    position: fixed;
-    width: 95%;
+  background: url('images/starfield-banner.jpg');
+  /* position: fixed; */
+  width: 95%;
+  padding: 10px;
+}
+
+.nasa-logo{
+  position: absolute;
+}
+
+
+.search-and-share {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  float: right;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: brown;
+}
+
+.search-box input::-webkit-input-placeholder {
+  color: red;
+} 
+
+.search-box input::-moz-input-placeholder {
+  color: red;
+} 
+
+.search-box input::-o-input-placeholder {
+  color: red;
+} 
+
+.search-box input::-ms-input-placeholder {
+  color: red;
+} 
+
+.search-box input{
+  width: 100px;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.search-and-share img{
+  height: 80%;
+}
+
+.navigation-panel {
+  text-align: right;
+}
+
+.navigation-panel li {
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid white;
+  text-transform: capitalize;
+}
+
+.navigation-panel li:last-child{
+  border-right: none;
+}
+
+.part-list {
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.part-list li{
+  display: inline-block;
+  border-right: 1px solid white;
+}
+
+.part-list li:last-child {
+  border: none;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.item-grid::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.item-grid .dawn{
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  background-image: url(/images/pia21924-16.jpg);
+}
+
+.item-grid .climate{
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  background-image: url(/images/mollweide_cycle.jpg);
+}
+
+.item-grid .events{
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  background-color: palegreen;
+}
+
+.item-grid .today-in-history{
+  grid-column: 3 / 5;
+  grid-row: 2 / 3;
+  background-image: url(/images/s69-39961.jpg);
+}
+
+.item-grid .image-of-the-day{
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  background-image: url(/images/ssc2017-14a1.jpg);
+}
+
+.item-grid .asteroids{
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  background-image: url(/images/pia22556-16.gif);
+}
+
+.item-grid .embed-video{
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
+  background-color: palegreen;
+}
+
+.item-grid .about-nasa{
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  background-image: url(/images/nasa_logo.png);
+}
+
+.item-grid .juno{
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  background-image: url(/images/io-home.gif);
+}
+
+.item-grid .cassini{
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  background-image: url(/images/cassini20170809.jpg);
+}
+
+.item-grid .telescope{
+  grid-column: 4 / 5;
+  grid-row: 4 / 5;
+  background-image: url(/images/fermiicecube_as.jpg);
 }
 
 .header .logo-link {
-    padding: 10px;
+  padding: 10px;
 }
 
 .header .logo {
-    width:110px;
-    margin:11px;
+  width:110px;
+  margin:11px;
 }
+
+/* .box {
+  width: 30%;
+  padding-top: 30%;
+  border: orchid 1px solid;
+} */
