@@ -1,58 +1,62 @@
 * {
   margin: 0;
   padding: 0;
-  color: aliceblue;
+  font-size: 10px;
 }
+
 body {
   background-color: black;
   width: 95%;
   margin: auto;
+  padding-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #dddddd
 }
 
 .header {
   background: url('images/starfield-banner.jpg');
   /* position: fixed; */
-  width: 95%;
-  padding: 10px;
+  padding: 20px 10px 10px 0;
 }
 
 .nasa-logo-top{
   position: absolute;
 }
 
-
 .search-and-share {
   display: flex;
   align-items: center;
-  height: 35px;
   float: right;
+  height: 4em;
+  padding: 10px 0 0 20px ;
 }
 
 .search-box {
   display: flex;
   align-items: center;
   height: 100%;
-  background-color: brown;
+  background-color: rgba(255,255,255,0.4);
 }
 
 .search-box input::-webkit-input-placeholder {
-  color: red;
+  font-size: 1.5em;
+  color: rgba(255,255,255,0.5);
 } 
 
 .search-box input::-moz-input-placeholder {
-  color: red;
-} 
+  font-size: 1.5em;
+  color: rgba(255,255,255,0.5);} 
 
 .search-box input::-o-input-placeholder {
-  color: red;
-} 
+  font-size: 1.5em;
+  color: rgba(255,255,255,0.5);} 
 
 .search-box input::-ms-input-placeholder {
-  color: red;
-} 
+  font-size: 1.5em;
+  color: rgba(255,255,255,0.5);} 
 
 .search-box input{
-  width: 100px;
+  width: 14em;
   height: 100%;
   padding: 10px;
   border: none;
@@ -70,7 +74,9 @@ body {
 .navigation-panel li {
   display: inline-block;
   padding: 10px;
-  border-right: 1px solid white;
+  border-right: 2px solid rgba(255,255,255,0.5);
+  font-size: 2em;
+  /* font-family: Arial, Helvetica, sans-serif; */
   text-transform: capitalize;
 }
 
@@ -80,13 +86,20 @@ body {
 
 .part-list {
   clear: both;
-  margin: 0 auto;
+  margin-top: 20px;
   text-align: center;
 }
 
+.part-list ul {
+  display: inline-block;
+  background-color: rgba(255,255,255,0.4);
+  padding: 8px;
+}
 .part-list li{
   display: inline-block;
-  border-right: 1px solid white;
+  border-right: 1px solid rgba(255,255,255,0.4);
+  padding: 5px 10px 5px 10px;
+  font-size: 1.4em;
 }
 
 .part-list li:last-child {
@@ -97,8 +110,9 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 1fr;
-  column-gap: 20px;
-  row-gap: 20px;
+  column-gap: 10px;
+  row-gap: 10px;
+  padding: 5px;
 }
 
 .item-grid::before {
@@ -109,40 +123,54 @@ body {
   grid-column: 1 / 1;
 }
 
-.item-grid .dawn{
+.item-grid .dawn {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
   background-image: url(/images/pia21924-16.jpg);
+  background-size: 110%;
+  background-position: 20% 50%;
 }
 
 .item-grid .climate{
   grid-column: 3 / 4;
   grid-row: 1 / 2;
   background-image: url(/images/mollweide_cycle.jpg);
+  background-size: 110%;
+  background-position: 20% 50%;
 }
 
 .item-grid .events{
   grid-column: 4 / 5;
   grid-row: 1 / 2;
-  background-color: palegreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(51, 121, 200, 0.8);
 }
 
 .item-grid .today-in-history{
   grid-column: 3 / 5;
   grid-row: 2 / 3;
   background-image: url(/images/s69-39961.jpg);
+  background-size: 110%;
+  background-position: 20% 50%;
 }
 
 .item-grid .image-of-the-day{
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   background-image: url(/images/ssc2017-14a1.jpg);
+  background-size: 127%;
+  background-position: 89% 50%;
+
 }
 
 .item-grid .asteroids{
   grid-column: 2 / 4;
   grid-row: 3 / 4;
   background-image: url(/images/pia22556-16.gif);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .item-grid .embed-video{
@@ -155,24 +183,32 @@ body {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
   background-image: url(/images/nasa_logo.png);
+  background-size: 100%;
+  background-color: rgba(255,255,255,0.2);
 }
 
 .item-grid .juno{
   grid-column: 2 / 3;
   grid-row: 4 / 5;
   background-image: url(/images/io-home.gif);
+  background-size: 110%;
+  background-position: 20% 50%;
 }
 
 .item-grid .cassini{
   grid-column: 3 / 4;
   grid-row: 4 / 5;
   background-image: url(/images/cassini20170809.jpg);
+  background-size: 110%;
+  background-position: 20% 50%;
 }
 
 .item-grid .telescope{
   grid-column: 4 / 5;
   grid-row: 4 / 5;
   background-image: url(/images/fermiicecube_as.jpg);
+  background-size: 110%;
+  background-position: 20% 50%;
 }
 
 .box-heading 
@@ -180,42 +216,101 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.box-heading h3 {
+  display: inline-block;
+  width: fit-content;
+  padding: 8px;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(51, 121, 200, 0.8);
+}
+
+.box-heading p {
+  padding: 5px;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.box-heading img {
+  position: absolute;
+  width: 25px;
+  right: 5px;
+  top: 5px;
+}
+
+
+.events h3,
+.events h4,
+.events p {
+  font-size: 1.3em;
+}
+
+.events h3 {
+  margin: 20px 15px 0 15px;
+  padding-bottom: 5px;
+  border-bottom: solid 2px #dddddd;
+}
+
+.events-content {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.events p {
+  margin-bottom: 5px;
+}
+
+.events-footer {
+  display: flex;
+  justify-content: space-between;   /* padding: 10px; */
+  margin: 20px 5px 0 5px;
+  padding: 0px 10px 0px 10px;
+  border-top: solid 2px #dddddd;
+}
 
 
 .more-stories {
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 2em;
   text-transform: uppercase;
   text-align: center;
+  background-color: #1d4288;
 }
 
 .nasa-logo-bottom,
-.author{
+.author {
   display: inline-block;
   vertical-align: top;
+}
 
+.footer {
+  margin-top: 50px;
+}
+
+.nasa-logo-bottom {
+  width: 6%;
 }
 
 .footer-option{
   text-align: right;
 }
 
+.footer h4{
+  font-size: 1.5em;
+}
+
 .footer-option li{
   display: inline;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #1d4288;
+  padding: 0px 12px 0px 12px;
 }
-
-.header .logo-link {
-  padding: 10px;
-}
-
-.header .logo {
-  width:110px;
-  margin:11px;
-}
-
-/* .box {
-  width: 30%;
-  padding-top: 30%;
-  border: orchid 1px solid;
-} */
-
