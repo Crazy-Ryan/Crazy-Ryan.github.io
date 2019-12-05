@@ -19,7 +19,7 @@ body {
   padding: 20px 10px 10px 0;
 }
 
-.nasa-logo-top{
+.nasa-logo-top {
   position: absolute;
 }
 
@@ -28,7 +28,7 @@ body {
   align-items: center;
   float: right;
   height: 4em;
-  padding: 10px 0 0 20px ;
+  padding: 5px 0 0 20px ;
 }
 
 .search-box {
@@ -76,7 +76,6 @@ body {
   padding: 10px;
   border-right: 2px solid rgba(255,255,255,0.5);
   font-size: 2em;
-  /* font-family: Arial, Helvetica, sans-serif; */
   text-transform: capitalize;
 }
 
@@ -93,7 +92,7 @@ body {
 .part-list ul {
   display: inline-block;
   background-color: rgba(255,255,255,0.4);
-  padding: 8px;
+  padding: 5px;
 }
 .part-list li{
   display: inline-block;
@@ -176,7 +175,11 @@ body {
 .item-grid .embed-video{
   grid-column: 4 / 5;
   grid-row: 3 / 4;
-  background-color: palegreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255,255,255,0.2);
 }
 
 .item-grid .about-nasa{
@@ -226,13 +229,13 @@ body {
   padding: 8px;
   font-size: 1.8em;
   font-weight: bold;
-  color: white;
+  color: #dddddd;
   background-color: rgba(51, 121, 200, 0.8);
 }
 
 .box-heading p {
   padding: 5px;
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
   color: black;
   background-color: rgba(255,255,255,0.8);
@@ -240,11 +243,10 @@ body {
 
 .box-heading img {
   position: absolute;
-  width: 25px;
+  width: 20px;
   right: 5px;
   top: 5px;
 }
-
 
 .events h3,
 .events h4,
@@ -255,7 +257,7 @@ body {
 .events h3 {
   margin: 20px 15px 0 15px;
   padding-bottom: 5px;
-  border-bottom: solid 2px #dddddd;
+  border-bottom: solid 1px #dddddd;
 }
 
 .events-content {
@@ -269,17 +271,20 @@ body {
 
 .events-footer {
   display: flex;
-  justify-content: space-between;   /* padding: 10px; */
+  justify-content: space-between;
   margin: 20px 5px 0 5px;
-  padding: 0px 10px 0px 10px;
-  border-top: solid 2px #dddddd;
+  padding: 1px 10px 0 10px;
+  border-top: solid 1px #dddddd;
 }
 
+.embed-video video{
+  width: 100%; 
+}
 
 .more-stories {
   margin-top: 30px;
   padding: 10px;
-  font-size: 2em;
+  font-size: 1.8em;
   text-transform: uppercase;
   text-align: center;
   background-color: #1d4288;
@@ -300,6 +305,7 @@ body {
 }
 
 .footer-option{
+  margin-top: 20px;
   text-align: right;
 }
 
