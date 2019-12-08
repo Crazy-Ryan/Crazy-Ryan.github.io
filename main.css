@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-  background: url('images/starfield-banner.jpg');
+  background: url('./images/starfield-banner.jpg');
   padding: 20px 10px 10px 0;
 }
 
@@ -124,7 +124,7 @@ body {
 .item-grid .dawn {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
-  background-image: url(/images/pia21924-16.jpg);
+  background-image: url(./images/pia21924-16.jpg);
   background-size: 110%;
   background-position: 20% 50%;
 }
@@ -132,7 +132,7 @@ body {
 .item-grid .climate {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
-  background-image: url(/images/mollweide_cycle.jpg);
+  background-image: url(./images/mollweide_cycle.jpg);
   background-size: 110%;
   background-position: 20% 50%;
 }
@@ -149,7 +149,7 @@ body {
 .item-grid .today-in-history {
   grid-column: 3 / 5;
   grid-row: 2 / 3;
-  background-image: url(/images/s69-39961.jpg);
+  background-image: url(./images/s69-39961.jpg);
   background-size: 110%;
   background-position: 20% 50%;
 }
@@ -157,7 +157,7 @@ body {
 .item-grid .image-of-the-day {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  background-image: url(/images/ssc2017-14a1.jpg);
+  background-image: url(./images/ssc2017-14a1.jpg);
   background-size: 127%;
   background-position: 89% 50%;
 }
@@ -165,7 +165,7 @@ body {
 .item-grid .asteroids {
   grid-column: 2 / 4;
   grid-row: 3 / 4;
-  background-image: url(/images/pia22556-16.gif);
+  background-image: url(./images/pia22556-16.gif);
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
@@ -183,7 +183,7 @@ body {
 .item-grid .about-nasa {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
-  background-image: url(/images/nasa_logo.png);
+  background-image: url(./images/nasa_logo.png);
   background-size: 100%;
   background-color: rgba(255,255,255,0.2);
 }
@@ -191,7 +191,7 @@ body {
 .item-grid .juno {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
-  background-image: url(/images/io-home.gif);
+  background-image: url(./images/io-home.gif);
   background-size: 110%;
   background-position: 20% 50%;
 }
@@ -199,7 +199,7 @@ body {
 .item-grid .cassini {
   grid-column: 3 / 4;
   grid-row: 4 / 5;
-  background-image: url(/images/cassini20170809.jpg);
+  background-image: url(./images/cassini20170809.jpg);
   background-size: 110%;
   background-position: 20% 50%;
 }
@@ -207,7 +207,7 @@ body {
 .item-grid .telescope {
   grid-column: 4 / 5;
   grid-row: 4 / 5;
-  background-image: url(/images/fermiicecube_as.jpg);
+  background-image: url(./images/fermiicecube_as.jpg);
   background-size: 110%;
   background-position: 20% 50%;
 }
@@ -312,7 +312,7 @@ body {
 
 .footer-option li {
   display: inline;
-  padding: 0px 12px 0px 12px;
+  padding: 0 12px 0 12px;
   font-size: 1.4em;
   font-weight: bold;
   color: #1d4288;
